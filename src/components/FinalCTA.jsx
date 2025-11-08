@@ -15,8 +15,8 @@ const FinalCTA = () => {
         </p>
 
         {/* CTA Button - Large and Prominent */}
-        <button className="bg-olive-dark text-white px-12 py-5 rounded-full font-medium text-lg hover:bg-opacity-90 transition shadow-lg">
-          Learn More
+        <button className="btn-primary" style={{padding: '1.25rem 3rem', fontSize: '1.125rem'}}>
+          Let's Get Started
         </button>
       </div>
     </section>

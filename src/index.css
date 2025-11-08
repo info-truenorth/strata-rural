@@ -19,3 +19,65 @@
     @apply font-playfair;
   }
 }
+
+@layer components {
+  /* Button styles with hover animations */
+  .btn-primary {
+    @apply bg-olive-dark text-white px-8 py-3 rounded-full font-medium;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-md;
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .btn-primary:hover {
+    @apply shadow-xl;
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0) scale(0.98);
+    @apply shadow-md;
+  }
+
+  .btn-secondary {
+    @apply bg-sage-light text-black px-10 py-4 rounded-full font-medium;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-sm;
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .btn-secondary:hover {
+    @apply shadow-lg bg-opacity-90;
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+@layer utilities {
+  /* Fade-in animation */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .feature-card {
+    opacity: 0;
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .feature-card:nth-child(1) { animation-delay: 0.1s; }
+  .feature-card:nth-child(2) { animation-delay: 0.2s; }
+  .feature-card:nth-child(3) { animation-delay: 0.3s; }
+  .feature-card:nth-child(4) { animation-delay: 0.4s; }
+}

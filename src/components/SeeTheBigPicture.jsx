@@ -58,18 +58,18 @@ const SeeTheBigPicture = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="bg-sage-light text-black px-10 py-4 rounded-full font-medium hover:bg-opacity-90 transition">
+            <button className="btn-secondary">
               Discover More
             </button>
           </div>
 
           {/* Right Column - Image */}
           <div>
-            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden">
+            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden group cursor-pointer">
               <img
                 src="/farmland-nz.jpg"
                 alt="Farmland landscape in New Zealand"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
           </div>

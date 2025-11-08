@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const features = [
     {
       title: 'Mobile-First Web Design',
@@ -28,19 +38,19 @@ const Hero = () => {
           Digital presence built for rural NZ reality
         </h1>
 
-        {/* Hero Image with Frame - Multi-layer effect with olive shades */}
+        {/* Hero Image with Frame - Multi-layer effect with olive shades and parallax */}
         <div className="mb-32 flex justify-center px-4">
           <div className="w-full max-w-5xl relative" style={{perspective: '1000px'}}>
-            {/* Layer 3: Lightest olive (furthest back) */}
-            <div className="absolute inset-0 bg-sage-light rounded-3xl" style={{transform: 'translate(48px, 48px)', zIndex: 1}}></div>
+            {/* Layer 3: Lightest olive (parallax slowest) */}
+            <div className="absolute inset-0 bg-sage-light rounded-3xl transition-transform duration-100" style={{transform: `translate(${48 + scrollY * 0.02}px, ${48 + scrollY * 0.02}px)`, zIndex: 1}}></div>
 
-            {/* Layer 2: Medium olive */}
-            <div className="absolute inset-0 bg-olive-medium rounded-3xl" style={{transform: 'translate(32px, 32px)', zIndex: 2}}></div>
+            {/* Layer 2: Medium olive (parallax medium) */}
+            <div className="absolute inset-0 bg-olive-medium rounded-3xl transition-transform duration-100" style={{transform: `translate(${32 + scrollY * 0.015}px, ${32 + scrollY * 0.015}px)`, zIndex: 2}}></div>
 
-            {/* Layer 1: Dark olive */}
-            <div className="absolute inset-0 bg-olive-dark rounded-3xl" style={{transform: 'translate(16px, 16px)', zIndex: 3}}></div>
+            {/* Layer 1: Dark olive (parallax fastest) */}
+            <div className="absolute inset-0 bg-olive-dark rounded-3xl transition-transform duration-100" style={{transform: `translate(${16 + scrollY * 0.01}px, ${16 + scrollY * 0.01}px)`, zIndex: 3}}></div>
 
-            {/* Black border tablet frame (foreground) */}
+            {/* Black border tablet frame (foreground - no parallax) */}
             <div className="relative bg-black p-4 md:p-6 rounded-3xl shadow-xl" style={{zIndex: 4}}>
               <img
                 src="/hero-nz-bush.jpg"
@@ -64,7 +74,7 @@ const Hero = () => {
         {/* 4-Column Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <div key={index} className="text-left">
+            <div key={index} className="text-left feature-card">
               <h3 className="font-playfair text-lg font-medium text-black mb-3">
                 {feature.title}
               </h3>

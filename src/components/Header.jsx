@@ -26,8 +26,8 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <button className="bg-olive-dark text-white px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition">
-          Learn More
+        <button className="btn-primary">
+          Get Started
         </button>
       </div>
     </header>

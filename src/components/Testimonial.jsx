@@ -7,11 +7,11 @@ const Testimonial = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Image */}
           <div>
-            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden">
+            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden group cursor-pointer">
               <img
                 src="/nz-farmland.jpg"
                 alt="New Zealand farmland landscape"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
           </div>
