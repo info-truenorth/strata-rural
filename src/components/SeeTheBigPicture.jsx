@@ -31,11 +31,11 @@ const SeeTheBigPicture = () => {
           {/* Left Column - Text */}
           <div className="border-l-4 border-olive-dark pl-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-medium text-black mb-8 leading-tight">
-              but a website alone isn't enough
+              see the big picture
             </h2>
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-12">
-              Your site is just the start. We integrate Google Business, local SEO, social presence, and regular content so every part of your digital presence works together. When they search, they find you. When they find you, they trust you.
+              Most businesses focus only on having a website. We build your complete digital ecosystem—your site, Google listing, social presence, and content all work together to attract and convert local customers.
             </p>
 
             {/* Numbered Points */}
