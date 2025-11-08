@@ -51,7 +51,7 @@ const Process = () => {
 
         {/* CTA Button - Left-aligned */}
         <div className="max-w-7xl">
-          <button className="bg-sage-light text-black px-10 py-4 rounded-full font-medium hover:bg-opacity-90 transition">
+          <button className="btn-secondary">
             Discover More
           </button>
         </div>

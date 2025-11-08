@@ -42,20 +42,20 @@ const Hero = () => {
         <div className="mb-32 flex justify-center px-4">
           <div className="w-full max-w-5xl relative" style={{perspective: '1000px'}}>
             {/* Layer 3: Lightest olive (parallax slowest) */}
-            <div className="absolute inset-0 bg-sage-light rounded-3xl transition-transform duration-100" style={{transform: `translate(${48 + scrollY * 0.02}px, ${48 + scrollY * 0.02}px)`, zIndex: 1}}></div>
+            <div className="absolute inset-0 bg-sage-light rounded-3xl transition-transform duration-100" style={{transform: `translate(${48 + scrollY * 0.05}px, ${48 + scrollY * 0.05}px)`, zIndex: 1}}></div>
 
             {/* Layer 2: Medium olive (parallax medium) */}
-            <div className="absolute inset-0 bg-olive-medium rounded-3xl transition-transform duration-100" style={{transform: `translate(${32 + scrollY * 0.015}px, ${32 + scrollY * 0.015}px)`, zIndex: 2}}></div>
+            <div className="absolute inset-0 bg-olive-medium rounded-3xl transition-transform duration-100" style={{transform: `translate(${32 + scrollY * 0.04}px, ${32 + scrollY * 0.04}px)`, zIndex: 2}}></div>
 
             {/* Layer 1: Dark olive (parallax fastest) */}
-            <div className="absolute inset-0 bg-olive-dark rounded-3xl transition-transform duration-100" style={{transform: `translate(${16 + scrollY * 0.01}px, ${16 + scrollY * 0.01}px)`, zIndex: 3}}></div>
+            <div className="absolute inset-0 bg-olive-dark rounded-3xl transition-transform duration-100" style={{transform: `translate(${16 + scrollY * 0.03}px, ${16 + scrollY * 0.03}px)`, zIndex: 3}}></div>
 
             {/* Black border tablet frame (foreground - no parallax) */}
-            <div className="relative bg-black p-4 md:p-6 rounded-3xl shadow-xl" style={{zIndex: 4}}>
+            <div className="relative bg-black p-4 md:p-6 rounded-3xl shadow-xl group cursor-pointer" style={{zIndex: 4}}>
               <img
                 src="/hero-nz-bush.jpg"
                 alt="New Zealand bush landscape"
-                className="w-full h-auto rounded-xl"
+                className="w-full h-auto rounded-xl transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           </div>
