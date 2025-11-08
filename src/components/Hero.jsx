@@ -53,7 +53,7 @@ const Hero = () => {
 
         {/* Below Image Content */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-4">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-8">
             digital presence that actually works in rural nz
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
