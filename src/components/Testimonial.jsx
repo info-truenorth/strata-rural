@@ -7,8 +7,12 @@ const Testimonial = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Image */}
           <div>
-            <div className="aspect-square bg-gradient-to-br from-slate-200 via-blue-100 to-purple-100 rounded-2xl shadow-lg">
-              {/* Placeholder for geometric/abstract composition with spheres */}
+            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden">
+              <img
+                src="/nz-farmland.jpg"
+                alt="New Zealand farmland landscape"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 

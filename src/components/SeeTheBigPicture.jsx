@@ -65,8 +65,12 @@ const SeeTheBigPicture = () => {
 
           {/* Right Column - Image */}
           <div>
-            <div className="aspect-square bg-gradient-to-br from-tan-cream to-amber-100 rounded-2xl shadow-lg">
-              {/* Placeholder for geometric/abstract composition */}
+            <div className="aspect-square rounded-2xl shadow-lg overflow-hidden">
+              <img
+                src="/farmland-nz.jpg"
+                alt="Farmland landscape in New Zealand"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

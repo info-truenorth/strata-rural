@@ -21,7 +21,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="pt-32 pb-20 px-6 bg-white">
+    <section className="pt-32 pb-32 px-6 bg-white">
       <div className="container mx-auto max-w-7xl">
         {/* Main Headline */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-semibold text-black text-center mb-12 leading-tight">
@@ -29,7 +29,7 @@ const Hero = () => {
         </h1>
 
         {/* Hero Image with Frame - Multi-layer effect with olive shades */}
-        <div className="mb-16 flex justify-center px-4">
+        <div className="mb-32 flex justify-center px-4">
           <div className="w-full max-w-5xl relative" style={{perspective: '1000px'}}>
             {/* Layer 3: Lightest olive (furthest back) */}
             <div className="absolute inset-0 bg-sage-light rounded-3xl" style={{transform: 'translate(48px, 48px)', zIndex: 1}}></div>
