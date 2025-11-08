@@ -64,10 +64,10 @@ const Hero = () => {
         {/* Below Image Content */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-8">
-            digital presence that actually works in rural nz
+            fast websites designed for rural connections
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-            80% of your customers are searching on mobile. We build fast, mobile-first websites that actually work on rural connections.
+            Your website is the foundation. We build lightning-fast, mobile-first sites that load instantly on rural internet, so customers can find you and convert, not abandon.
           </p>
         </div>
 
