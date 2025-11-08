@@ -11,25 +11,6 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const features = [
-    {
-      title: 'Mobile-First Web Design',
-      description: 'Websites are designed for mobile devices and rural connections. No bloat, no delays.',
-    },
-    {
-      title: 'Local SEO & Google Business',
-      description: 'Dominate local search results. Optimize your Google Business Profile so you\'re found when customers search.',
-    },
-    {
-      title: 'Content & Social Media',
-      description: 'Consistent, engaging content across platforms. Regular blogs and social posts that keep your business visible and build trust.',
-    },
-    {
-      title: 'Ongoing Management',
-      description: 'Continuous optimization, updating content, improving SEO, and ensuring everything runs smoothly.',
-    },
-  ];
-
   return (
     <section className="pt-32 pb-32 px-6 bg-white">
       <div className="container mx-auto max-w-7xl">
@@ -62,27 +43,13 @@ const Hero = () => {
         </div>
 
         {/* Below Image Content */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-8">
             digital presence that actually works in rural nz
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             80% of your customers are searching on mobile. We build fast, mobile-first websites that actually work on rural connections.
           </p>
-        </div>
-
-        {/* 4-Column Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {features.map((feature, index) => (
-            <div key={index} className="text-left feature-card">
-              <h3 className="font-playfair text-lg font-medium text-black mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
