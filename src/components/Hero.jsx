@@ -24,7 +24,7 @@ const Hero = () => {
     <section className="pt-32 pb-32 px-6 bg-white">
       <div className="container mx-auto max-w-7xl">
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-semibold text-black text-center mb-12 leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-semibold text-black text-center mb-20 leading-tight">
           Digital presence built for rural NZ reality
         </h1>
 
