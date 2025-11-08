@@ -31,7 +31,7 @@ const SeeTheBigPicture = () => {
           {/* Left Column - Text */}
           <div className="border-l-4 border-olive-dark pl-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-medium text-black mb-8 leading-tight">
-              see the big picture
+              a website isn't enough
             </h2>
 
             <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-12">
